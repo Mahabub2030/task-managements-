@@ -2,11 +2,11 @@
 import App from "@/App";
 import { createBrowserRouter } from "react-router";
 
-const router = createBrowserRouter([
+const routes = createBrowserRouter([
     {
         path: '/',
         element:<App/>
      
     }
 ])
-export default router;
+export default routes;
