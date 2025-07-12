@@ -3,7 +3,10 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { ITask } from "@/types";
 import { Checkbox } from "@radix-ui/react-checkbox";
+
 import { Trash2 } from "lucide-react";
+
+
 
 interface IProps {
   task: ITask
@@ -30,7 +33,7 @@ export default function TaskCard({task} :IProps) {
           <Button variant="link" className="p-0 text-red-500">
             <Trash2 />
           </Button>
-          <Checkbox/>
+        <Checkbox />
         </div>
       </div>
       <p className="mt-5">{task.description}</p>
